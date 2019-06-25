@@ -1,0 +1,7 @@
+{
+  "name": "sauceVisualRunner",
+  "version": "1.0.0",
+  "scripts": {
+    "test-screener": "screener-runner --conf screener.config.js"
+  }
+}
