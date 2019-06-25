@@ -17,11 +17,14 @@ export SCREENER_API_KEY="ENTER_YOUR_APIKEY_HERE"
 
 1. Git clone this repo
 
-2. Install Screener-Runner:
+2. cd into the sauceVisualRunner folder, and install Screener-Runner:
 
 ```
 $ npm install --save-dev screener-runner
 ```
+
+3. Change the `projectRepo` value in `screener.config.js` file to `yourname/repoName` (note - this can be whatever you'd like and is used on screener.io for the Project's name)
+
 
 ### Run Tests
 
