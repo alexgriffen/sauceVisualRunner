@@ -1,7 +1,7 @@
 var Steps = require('screener-runner/src/steps');
 module.exports = {
   // full repository name for your project:
-  projectRepo: 'alexgriffen/allTheTests',
+  projectRepo: 'alexgriffen/stepsTest',
 
   // this example assumes Environment Variables listed below exist on your system:
   apiKey: process.env.SCREENER_API_KEY,
@@ -13,12 +13,19 @@ module.exports = {
     accessKey: process.env.SAUCE_ACCESS_KEY,
     maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
     // extendedDebugging: true, // optional
-    tunnelIdentifier: 'USWEST' // optional
+    // tunnelIdentifier: 'USWEST' // optional
   },
   states: [
     {
-      url: 'http://saucelabs.com',
-      name: 'Sauce Labs'
+      url: 'https://www.saucedemo.com/',
+      name: 'Sauce Labs',
+      steps: new Steps()
+        .setValue('#user-name', 'standard_user')
+        .clearValue('#password')
+        .setValue('#password', 'secret_sauce', {isPassword: true})
+        .click('.btn_action')
+        .snapshot('login')
+        .end()
     },
     {
       url: 'http://screener.io',
@@ -29,22 +36,29 @@ module.exports = {
       name: 'Cute Puppies'
     }
   ],
+  newSessionForEachState: true,
   browsers: [
+    // {
+    //   browserName: 'chrome',
+    //   version: '74.0'
+    // },
     {
-      browserName: 'chrome',
-      version: '75'
+      browserName: 'chrome'
     },
     {
       browserName: 'microsoftedge',
       version: '17.17134'
     },
+    // {
+    //   browserName: 'firefox',
+    //   version: '68.0'
+    // },
     {
-      browserName: 'firefox',
-      version: '68'
+      browserName: 'firefox'
     },
     {
-      browserName: 'internet explorer',
-      version: '11'
+      browserName: 'safari',
+      version: '11.1'
     }
   ]
 };
