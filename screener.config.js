@@ -13,11 +13,11 @@ module.exports = {
     accessKey: process.env.SAUCE_ACCESS_KEY,
     maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
     // extendedDebugging: true, // optional
-    // tunnelIdentifier: 'USWEST' // optional
+    tunnelIdentifier: 'USWEST' // optional
   },
   states: [
     {
-      url: 'https://www.saucedemo.com/',
+      url: 'https://staging.saucedemo.com/',
       name: 'Sauce Labs',
       steps: new Steps()
         .setValue('#user-name', 'standard_user')
@@ -28,7 +28,7 @@ module.exports = {
         .end()
     },
     {
-      url: 'http://screener.io',
+      url: 'https://screener.io/v2/docs',
       name: 'Screener'
     },
     {
@@ -60,5 +60,7 @@ module.exports = {
       browserName: 'safari',
       version: '11.1'
     }
-  ]
+  ],
+  resoltuions:
+  []
 };
