@@ -60,7 +60,5 @@ module.exports = {
       browserName: 'safari',
       version: '11.1'
     }
-  ],
-  resoltuions:
-  []
+  ]
 };
