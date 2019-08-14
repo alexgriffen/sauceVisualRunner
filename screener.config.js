@@ -5,6 +5,8 @@ module.exports = {
 
   // this example assumes Environment Variables listed below exist on your system:
   apiKey: process.env.SCREENER_API_KEY,
+  baseBranch: 'master',
+  failureExitCode: 0,
   // ignore: '.dxGwqD',
   // array of UI states to capture visual snapshots of.
   // each state consists of a url and a name.
@@ -17,7 +19,7 @@ module.exports = {
   },
   states: [
     {
-      url: 'https://staging.saucedemo.com/',
+      url: 'https://www.saucedemo.com/',
       name: 'Sauce Labs',
       steps: new Steps()
         .setValue('#user-name', 'standard_user')
@@ -28,7 +30,7 @@ module.exports = {
         .end()
     },
     {
-      url: 'https://screener.io/v2/docs',
+      url: 'https://screener.io/',
       name: 'Screener'
     },
     {
