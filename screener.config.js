@@ -30,7 +30,7 @@ module.exports = {
         .end()
     },
     {
-      url: 'https://screener.io/',
+      url: 'https://screener.io/v2/docs',
       name: 'Screener'
     },
     {
