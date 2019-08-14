@@ -15,7 +15,7 @@ module.exports = {
     accessKey: process.env.SAUCE_ACCESS_KEY,
     maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
     // extendedDebugging: true, // optional
-    tunnelIdentifier: 'USWEST' // optional
+    // tunnelIdentifier: 'USWEST' // optional
   },
   states: [
     {
