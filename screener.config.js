@@ -5,6 +5,8 @@ module.exports = {
 
   // this example assumes Environment Variables listed below exist on your system:
   apiKey: process.env.SCREENER_API_KEY,
+  baseBranch: 'master',
+  failureExitCode: 0,
   // ignore: '.dxGwqD',
   // array of UI states to capture visual snapshots of.
   // each state consists of a url and a name.
@@ -13,7 +15,7 @@ module.exports = {
     accessKey: process.env.SAUCE_ACCESS_KEY,
     maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
     // extendedDebugging: true, // optional
-    // tunnelIdentifier: 'USWEST' // optional
+    tunnelIdentifier: 'USWEST' // optional
   },
   states: [
     {
@@ -28,7 +30,7 @@ module.exports = {
         .end()
     },
     {
-      url: 'http://screener.io',
+      url: 'https://screener.io/',
       name: 'Screener'
     },
     {
