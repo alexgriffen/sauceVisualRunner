@@ -7,6 +7,7 @@ module.exports = {
   apiKey: process.env.SCREENER_API_KEY,
   baseBranch: 'master',
   failureExitCode: 0,
+  branch: process.env.BRANCH_NAME,
   // ignore: '.dxGwqD',
   // array of UI states to capture visual snapshots of.
   // each state consists of a url and a name.
@@ -30,7 +31,7 @@ module.exports = {
         .end()
     },
     {
-      url: 'https://screener.io/',
+      url: 'https://screener.io/v2/docs',
       name: 'Screener'
     },
     {
