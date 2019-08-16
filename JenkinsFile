@@ -1,0 +1,13 @@
+node {
+    stage('Check Out'){
+        checkout scm
+    }
+    stage('Sauce Visual'){
+        nodejs('11.9') {
+            withCredentials([string(credentialsId: 'derek_screener_key', variable: 'SCREENER_API_KEY')]) {
+                sh 'npm install'
+                sh 'npm run test-storybook'
+            }
+        }
+    }
+}

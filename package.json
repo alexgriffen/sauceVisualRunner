@@ -2,7 +2,8 @@
   "name": "sauceVisualTests",
   "version": "1.0.0",
   "scripts": {
-    "test-screener": "screener-runner --conf screener.config.js"
+    "test-screener": "screener-runner --conf screener.config.js",
+    "test-screener-qa": "screener-runner --conf qa.screener.config.js"
   },
   "devDependencies": {
     "screener-runner": "^0.10.42"
