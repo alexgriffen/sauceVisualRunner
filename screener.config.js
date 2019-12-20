@@ -16,6 +16,7 @@ module.exports = {
     maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
     // extendedDebugging: true, // optional
     // tunnelIdentifier: 'USWEST' // optional
+    launchSauceConnect: true // have screener-runner manage my sauce connect tunnels for me
   },
   states: [
     {
@@ -40,24 +41,24 @@ module.exports = {
   ],
   newSessionForEachState: true,
   browsers: [
-    // {
-    //   browserName: 'chrome',
-    //   version: '74.0'
-    // },
-    {
-      browserName: 'chrome'
-    },
+     {
+       browserName: 'chrome',
+       version: '74.0'
+     },
+//    {
+//      browserName: 'chrome'
+//    },
     {
       browserName: 'microsoftedge',
       version: '17.17134'
     },
-    // {
-    //   browserName: 'firefox',
-    //   version: '68.0'
-    // },
-    {
-      browserName: 'firefox'
-    },
+     {
+       browserName: 'firefox',
+       version: '68.0'
+     },
+//    {
+//      browserName: 'firefox'
+//    },
     {
       browserName: 'safari',
       version: '11.1'

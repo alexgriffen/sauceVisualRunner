@@ -5,6 +5,6 @@
     "test-screener": "screener-runner --conf screener.config.js"
   },
   "devDependencies": {
-    "screener-runner": "^0.10.42"
+    "screener-runner": "^0.11.0"
   }
 }
