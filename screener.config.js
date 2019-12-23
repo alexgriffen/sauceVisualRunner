@@ -43,7 +43,7 @@ module.exports = {
   browsers: [
      {
        browserName: 'chrome',
-       version: '74.0'
+       version: '79.0'
      },
 //    {
 //      browserName: 'chrome'
@@ -52,16 +52,16 @@ module.exports = {
       browserName: 'microsoftedge',
       version: '17.17134'
     },
-     {
-       browserName: 'firefox',
-       version: '68.0'
-     },
+    {
+      browserName: 'firefox',
+      version: '71.0'
+    }
 //    {
 //      browserName: 'firefox'
 //    },
-    {
-      browserName: 'safari',
-      version: '11.1'
-    }
+//    {
+//      browserName: 'safari',
+//      version: '11.1'
+//    }
   ]
 };
