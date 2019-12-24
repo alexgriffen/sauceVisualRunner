@@ -33,7 +33,6 @@ module.exports = {
   ],
   newSessionForEachState: true,
   resolutions:[
-    '1024x768',
     {
       deviceName: 'iPhone 6'
     },
