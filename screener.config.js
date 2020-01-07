@@ -7,16 +7,16 @@ module.exports = {
   apiKey: process.env.SCREENER_API_KEY,
   baseBranch: 'master',
   failureExitCode: 0,
-  // ignore: '.dxGwqD',
+//  ignore: '.dxGwqD',
   // array of UI states to capture visual snapshots of.
   // each state consists of a url and a name.
   sauce: {
     username: process.env.SAUCE_USERNAME,
     accessKey: process.env.SAUCE_ACCESS_KEY,
     maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
-    // extendedDebugging: true, // optional
-    // tunnelIdentifier: 'USWEST' // optional
-    launchSauceConnect: true // have screener-runner manage my sauce connect tunnels for me
+//    extendedDebugging: true, // optional
+//    tunnelIdentifier: 'USWEST' // optional
+//    launchSauceConnect: true // have screener-runner manage my sauce connect tunnels for me
   },
   states: [
     {
