@@ -35,8 +35,8 @@ module.exports = {
       name: 'Screener'
     },
     {
-      url: 'https://yahoo.com',
-      name: 'Landing Page'
+      url: 'https://saucelabs.com/platform/visual-testing',
+      name: 'Subtle internal nod'
     }
   ],
   newSessionForEachState: true,
