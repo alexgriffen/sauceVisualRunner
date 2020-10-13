@@ -11,9 +11,9 @@ module.exports = {
   // array of UI states to capture visual snapshots of.
   // each state consists of a url and a name.
   sauce: {
-    username: process.env.SAUCE_USERNAME,
-    accessKey: process.env.SAUCE_ACCESS_KEY,
-    maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
+//    username: process.env.SAUCE_USERNAME,
+//    accessKey: process.env.SAUCE_ACCESS_KEY,
+//    maxConcurrent: 100, // optional available concurrency you have from Sauce Labs
 //    extendedDebugging: true, // optional
 //    tunnelIdentifier: 'USWEST' // optional
 //    launchSauceConnect: true // have screener-runner manage my sauce connect tunnels for me
@@ -41,23 +41,23 @@ module.exports = {
   ],
   newSessionForEachState: true,
   browsers: [
-     {
-       browserName: 'chrome',
-       version: '79.0'
-     },
-//    {
-//      browserName: 'chrome'
-//    },
     {
-      browserName: 'microsoftedge',
-      version: '17.17134'
+     browserName: 'chrome'
     },
     {
-      browserName: 'firefox',
-      version: '71.0'
+      browserName: 'firefox'
     }
 //    {
-//      browserName: 'firefox'
+//       browserName: 'chrome',
+//       version: '79.0'
+//    },
+//    {
+//      browserName: 'microsoftedge',
+//      version: '17.17134'
+//    },
+//    {
+//      browserName: 'firefox',
+//      version: '71.0'
 //    },
 //    {
 //      browserName: 'safari',
